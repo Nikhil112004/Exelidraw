@@ -27,7 +27,6 @@ export default function Home() {
   <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-20">
         <div className="absolute inset-0 canvas-dots opacity-40" />
         <div className="container relative z-10">
@@ -77,7 +76,6 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Canvas Preview */}
           <motion.div
             initial={{ opacity: 0, y: 40, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -97,7 +95,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features */}
       <section id="features" className="py-24">
         <div className="container">
           <motion.div
@@ -122,7 +119,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
       <section id="how-it-works" className="py-24 bg-secondary/30">
         <div className="container">
           <motion.div
@@ -155,7 +151,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-24">
         <div className="container">
           <motion.div
@@ -177,7 +172,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-border py-10">
         <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
           <span className="font-display text-xl font-bold text-foreground">Sketchflow</span>
