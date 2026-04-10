@@ -4,6 +4,7 @@ import express, { Request, Response } from "express";
 import { middleware } from "./middleware";
 import { CreateUserSchema, Signinschema, CreateRoomSchema } from "@repo/common/types";
 import { prismaClient } from "@repo/db/client";
+import cors from "cors";
 
 export interface AuthRequest extends Request {
   userId?: string;
@@ -12,6 +13,7 @@ export interface AuthRequest extends Request {
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
  app.post("/signup", async (req, res) => {
     const ParsedData = CreateUserSchema.safeParse(req.body);
